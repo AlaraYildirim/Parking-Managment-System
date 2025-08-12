@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="application.AracGirisController"
+      spacing="15" alignment="CENTER" style="-fx-padding: 30;">
+    <Label text="Araç Giriş Formu" style="-fx-font-size: 18px;"/>
+
+    <TextField fx:id="plakaField" promptText="Plaka"/>
+    <TextField fx:id="modelField" promptText="Model"/>
+
+    <Button text="Giriş Yap" onAction="#handleGirisYap"/>
+    <Label fx:id="mesajLabel" style="-fx-text-fill: green;"/>
+</VBox>

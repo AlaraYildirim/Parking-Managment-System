@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="application.AracCikisController"
+      spacing="15" alignment="CENTER" style="-fx-padding: 30;">
+
+    <Label text="Araç Çıkış Paneli" style="-fx-font-size: 18px;"/>
+
+    <TextField fx:id="plakaField" promptText="Plaka"/>
+
+    <Button text="Çıkış Yap" onAction="#handleCikisYap"/>
+
+    <Label fx:id="mesajLabel" style="-fx-text-fill: green;"/>
+
+</VBox>

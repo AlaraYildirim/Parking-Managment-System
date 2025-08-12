@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="application.MainController">
+
+    <top>
+        <Label text="Otopark Yönetim Paneli"
+               style="-fx-font-size: 20px; -fx-padding: 15px;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 30;">
+            <Button text="Araç Girişi" onAction="#handleAracGirisi" prefWidth="200"/>
+            <Button text="Araç Çıkışı" onAction="#handleAracCikisi" prefWidth="200"/>
+            <Button text="Plaka ile Sorgula" onAction="#handleSorgula" prefWidth="200"/>
+            <Button text="Geçmişi Görüntüle" onAction="#handleGecmis" prefWidth="200"/>
+            <Button text="Tüm Araçları Görüntüle" onAction="#handleTumAraclar" prefWidth="200"/>
+            <Button text="Rezervasyonlar" onAction="#handleRezervasyon" prefWidth="200"/>
+            <Button text="Slot Durumu" onAction="#handleSlotDurum" prefWidth="200"/>
+        </VBox>
+    </center>
+
+</BorderPane>

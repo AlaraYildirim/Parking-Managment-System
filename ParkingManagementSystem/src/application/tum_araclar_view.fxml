@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="application.TumAraclarController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+
+    <Label text="Sistemdeki Tüm Araçlar" style="-fx-font-size: 18px;"/>
+
+    <TableView fx:id="vehicleTable" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="plateColumn" text="Plaka" prefWidth="100"/>
+            <TableColumn fx:id="modelColumn" text="Model" prefWidth="120"/>
+            <TableColumn fx:id="entryColumn" text="Giriş Zamanı" prefWidth="180"/>
+            <TableColumn fx:id="slotColumn" text="Konum (Kat-Blok-Slot)" prefWidth="200"/>
+        </columns>
+    </TableView>
+</VBox>
